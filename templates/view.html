@@ -1,0 +1,31 @@
+<table border="1">
+    <tr>
+        <th>url</th>
+        <th>domain</th>
+        <th>create_date</th>
+        <th>update_date</th>
+        <th>country</th>
+        <th>isDead</th>
+        <th>A</th>
+        <th>NS</th>
+        <th>CNAME</th>
+        <th>MX</th>
+        <th>TXT</th>
+    </tr>
+
+    {% for row in data %}
+    <tr>
+        <td>{{ row.url }}</td>
+        <td>{{ row.domain }}</td>
+        <td>{{ row.create_date }}</td>
+        <td>{{ row.update_date }}</td>
+        <td>{{ row.country }}</td>
+        <td>{{ row.isDead }}</td>
+        <td>{{ row.A }}</td>
+        <td>{{ row.NS }}</td>
+        <td>{{ row.CNAME }}</td>
+        <td>{{ row.MX }}</td>
+        <td>{{ row.TXT }}</td>
+    </tr>
+    {% endfor %}
+</table>
